@@ -10,13 +10,15 @@ Test Suite is implemented in python using [Robotframework](https://robotframewor
 
 # Installation for Mac and Linux:
 1. From root of this repository, run the following command:
-     pip install -r requirements.txt
-2. To confirm installation, run below command. 
-     pip list
-   Result should include, requests, robotframework, robotframework-requests
-
+     > pip install -r requirements.txt
+2. To confirm installation, run below command. Result should include, requests, robotframework, robotframework-requests
+     > pip list
+  
 # How to run tests:
 1. Make sure pltsci-sdet-assignment service is up and running on port 8080
 2. From root of this repository, run below command:
-   robot -d TestResults TestSuite
-3. TestResults are saved into TestResults directory. Open log.html to see the full execution results. Failed tests have the bug id tagged for reference. 
+   > robot -d TestResults TestSuite
+3. TestResults are saved into TestResults directory. Following files are available for report parsing.Failed tests have the bug id tagged for reference. 
+   - log.html
+   - report.html
+   - output.xml
