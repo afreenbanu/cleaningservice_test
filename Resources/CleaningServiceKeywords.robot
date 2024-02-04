@@ -21,8 +21,6 @@ cleaning service is up and running
 I send cleaning request with no input payload
      [Arguments]     ${coords}=[0, 0]     ${patches}=[0, 0]    ${instructions}=${empty}
 
-     ${my_headers}=     create dictionary     content-type=application/json
-
      ${response}=       POST    ${cleaning_service_url}     data=${empty}     headers=${my_headers}     expected_status=any
      
      Set suite variable     ${response}
@@ -39,7 +37,6 @@ I send cleaning request with given payload
     [Arguments]    ${room_size}=[0, 0]      ${coords}=[0, 0]     ${patches}=[0, 0]    ${instructions}=${empty}
 
      ${my_payload}=     set variable    {"roomSize": ${room_size}, "coords": ${coords}, "patches": [${patches}], "instructions": "${instructions}"}
-     ${my_headers}=     create dictionary     content-type=application/json
 
      ${response}=       POST    ${cleaning_service_url}     data=${my_payload}     headers=${my_headers}     expected_status=any
      
