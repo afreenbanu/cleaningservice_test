@@ -22,3 +22,6 @@ Test Suite is implemented in python using [Robotframework](https://robotframewor
    - log.html
    - report.html
    - output.xml
+
+Sample log.html
+![test_results](https://github.com/afreenbanu/cleaningservice_test/assets/8961608/8faad38f-672b-4a3d-af7b-9782c9cd9172)
