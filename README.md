@@ -1,5 +1,5 @@
 # cleaningservice_test
-Repository contains files needed to test the robotic hoover cleaning service. The service is endpoint is http://localhost:8080/v1/cleaning-sessions
+Hoover is a Service that navigates a imaginary robotic hoover (much like a Roomba) through an equally imaginary room based on X and Y coordinates. Goal is to test this service using a BDD style framework. Repository contains files needed to test the robotic hoover cleaning service. The service is endpoint is http://localhost:8080/v1/cleaning-sessions
 
 # Implementation:
 Test Suite is implemented in python using [Robotframework](https://robotframework.org/) and python requests are used to test the service endpoint. Test Cases are written in BDD format using Gherkin style. 
